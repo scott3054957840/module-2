@@ -16,16 +16,36 @@ h1 {
   text-align: center;
   margin-bottom: 25px;
 }
+h4 {
+  font-size: 1em;
+  margin: 0px;
+  text-align: center;
+}
+
+/* Container */
+.container {
+    background-color: red;
+}
 
 /* Menu item layout */
 .menu-item {
-  border: 1px solid black;
+  border: 2px solid black;
   padding: 16px;
   margin: 10px;
   background-color: #f8f8f8;
   position: relative;
   float: left;
   color: #222;
+  transition: box-shadow 0.3s ease;
+}
+.menu-item-alt {
+  border: 2px solid black;
+  padding: 16px;
+  margin: 10px;
+  background-color: #f8f8f8;
+  position: relative;
+  float: left;
+  color: #fff;
   transition: box-shadow 0.3s ease;
 }
 
@@ -40,32 +60,41 @@ h1 {
   top: 0;
   right: 0;
   background-color: #ddd;
-  border: 1px solid black;
+  border: 2px solid black;
   padding: 6px 12px;
   font-size: 1.25em; /* 25% larger than paragraph text */
   font-weight: bold;
+  width: 130px;
 }
 
 /* Distinct background colors per item */
 .chicken-style {
-  background-color: #ffefcc;
+  background-color: #999999;
 }
 .chicken-style .menu-label {
-  background-color: #ffda99;
+  background-color: #D59898;
 }
 
 .beef-style {
-  background-color: #fddcdc;
+  background-color: #999999;
 }
 .beef-style .menu-label {
-  background-color: #fba9a9;
+  background-color: #C14543;
 }
 
 .sushi-style {
-  background-color: #e0ffe0;
+  background-color: #999999;
 }
 .sushi-style .menu-label {
-  background-color: #a6f1a6;
+  background-color: #E5D198;
+}
+
+/* Further customization */
+p {
+    padding-top: 20px;
+}
+.menu-item.beef-style h4 {
+    color: #fff;
 }
 
 /* Desktop view: equal width items in one row */
