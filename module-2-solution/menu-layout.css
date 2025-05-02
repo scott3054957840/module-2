@@ -1,0 +1,95 @@
+/* Use border-box for predictable sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Apply Google Font and some base padding */
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Page heading styling */
+h1 {
+  font-size: 2em; /* 75% larger than base text */
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Menu item layout */
+.menu-item {
+  border: 1px solid black;
+  padding: 16px;
+  margin: 10px;
+  background-color: #f8f8f8;
+  position: relative;
+  float: left;
+  color: #222;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect for extra polish */
+.menu-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Menu label positioned at top right */
+.menu-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ddd;
+  border: 1px solid black;
+  padding: 6px 12px;
+  font-size: 1.25em; /* 25% larger than paragraph text */
+  font-weight: bold;
+}
+
+/* Distinct background colors per item */
+.chicken-style {
+  background-color: #ffefcc;
+}
+.chicken-style .menu-label {
+  background-color: #ffda99;
+}
+
+.beef-style {
+  background-color: #fddcdc;
+}
+.beef-style .menu-label {
+  background-color: #fba9a9;
+}
+
+.sushi-style {
+  background-color: #e0ffe0;
+}
+.sushi-style .menu-label {
+  background-color: #a6f1a6;
+}
+
+/* Desktop view: equal width items in one row */
+@media (min-width: 992px) {
+  .menu-item {
+    width: 33.33%;
+  }
+}
+
+/* Tablet view: two items on top, one on bottom */
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu-item {
+    width: 50%;
+  }
+  .menu-item:nth-child(3) {
+    width: 100%;
+    clear: both;
+  }
+}
+
+/* Mobile view: full-width stacked items */
+@media (max-width: 767px) {
+  .menu-item {
+    width: 100%;
+    clear: both;
+  }
+}
