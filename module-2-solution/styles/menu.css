@@ -38,16 +38,6 @@ h4 {
   color: #222;
   transition: box-shadow 0.3s ease;
 }
-.menu-item-alt {
-  border: 2px solid black;
-  padding: 16px;
-  margin: 10px;
-  background-color: #f8f8f8;
-  position: relative;
-  float: left;
-  color: #fff;
-  transition: box-shadow 0.3s ease;
-}
 
 /* Hover effect for extra polish */
 .menu-item:hover {
